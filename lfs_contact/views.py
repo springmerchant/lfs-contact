@@ -10,7 +10,7 @@ from lfs_contact.forms import ContactForm
 from lfs_contact.utils import send_contact_mail
 
 
-def contact_form(request, template_name="lfs/contact/contact_form.html"):
+def contact_form(request, template_name="front/contact/contact_form.html"):
     """Displays the contact form of LFS.
     """
     if request.method == 'POST':
@@ -35,7 +35,7 @@ def contact_form(request, template_name="lfs/contact/contact_form.html"):
     }))
 
 
-def contact_form_sent(request, template_name="lfs/contact/contact_form_sent.html"):
+def contact_form_sent(request, template_name="front/contact/contact_form_sent.html"):
     """Displays the page after the the contact form has been sent.
     """
     return render_to_response(template_name, RequestContext(request, {}))
