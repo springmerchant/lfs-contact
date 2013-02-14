@@ -11,7 +11,7 @@ from django.utils.translation import ugettext_lazy as _
 import lfs.core.utils
 
 
-def send_contact_mail(request, form, template="lfs/mail/contact_mail.html"):
+def send_contact_mail(request, form, template="front/mail/contact_mail.html"):
     """Sends an internal mail after a customer as submit the standard contact
     form.
     """
